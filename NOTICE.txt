@@ -1,0 +1,7 @@
+Awk Console - FL Studio controller scripts + agent connector, by awk.
+
+Not included: Arturia's "KeyLab Essential V2" FL Studio script (by Farès MEZDOUR / Arturia).
+The installer copies it from your own FL Studio install or Arturia download and makes two tiny
+edits (removes one import line; drops the '# name=' line of the entry file).
+
+Ideas (no code) from z-midi-console and fls-pilot by zorroukk (MIT).

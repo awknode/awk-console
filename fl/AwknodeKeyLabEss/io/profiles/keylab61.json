@@ -1,0 +1,513 @@
+{
+  "name": "keylab61",
+  "device": "Arturia KeyLab Essential 61 (mk1) - Analog Lab / User 1 = PLUGIN mode",
+  "version": 1,
+  "bank_size": 8,
+  "notes": "Plugin mode (Analog Lab or User 1 - both send the same CCs): knobs 1-8 = controls 1-8 and faders 1-8 = controls 9-16 of the last focused plugin (per-plugin layouts in plugin_maps); knob 9 = selected mixer track pan, fader 9 = its volume. Mixer volumes live in DAW mode.",
+  "controls": [
+    {
+      "id": "knob1",
+      "label": "Knob 1",
+      "cc": 74,
+      "channel": 0,
+      "mode": "abs",
+      "target": {
+        "kind": "focused_param",
+        "param": 0
+      }
+    },
+    {
+      "id": "knob2",
+      "label": "Knob 2",
+      "cc": 71,
+      "channel": 0,
+      "mode": "abs",
+      "target": {
+        "kind": "focused_param",
+        "param": 1
+      }
+    },
+    {
+      "id": "knob3",
+      "label": "Knob 3",
+      "cc": 76,
+      "channel": 0,
+      "mode": "abs",
+      "target": {
+        "kind": "focused_param",
+        "param": 2
+      }
+    },
+    {
+      "id": "knob4",
+      "label": "Knob 4",
+      "cc": 77,
+      "channel": 0,
+      "mode": "abs",
+      "target": {
+        "kind": "focused_param",
+        "param": 3
+      }
+    },
+    {
+      "id": "knob5",
+      "label": "Knob 5",
+      "cc": 93,
+      "channel": 0,
+      "mode": "abs",
+      "target": {
+        "kind": "focused_param",
+        "param": 4
+      }
+    },
+    {
+      "id": "knob6",
+      "label": "Knob 6",
+      "cc": 18,
+      "channel": 0,
+      "mode": "abs",
+      "target": {
+        "kind": "focused_param",
+        "param": 5
+      }
+    },
+    {
+      "id": "knob7",
+      "label": "Knob 7",
+      "cc": 19,
+      "channel": 0,
+      "mode": "abs",
+      "target": {
+        "kind": "focused_param",
+        "param": 6
+      }
+    },
+    {
+      "id": "knob8",
+      "label": "Knob 8",
+      "cc": 16,
+      "channel": 0,
+      "mode": "abs",
+      "target": {
+        "kind": "focused_param",
+        "param": 7
+      }
+    },
+    {
+      "id": "knob9",
+      "label": "Knob 9",
+      "cc": 17,
+      "channel": 0,
+      "mode": "abs",
+      "target": {
+        "kind": "selected_pan"
+      }
+    },
+    {
+      "id": "fader1",
+      "label": "Fader 1",
+      "cc": 73,
+      "channel": 0,
+      "mode": "abs",
+      "target": {
+        "kind": "focused_param",
+        "param": 8
+      }
+    },
+    {
+      "id": "fader2",
+      "label": "Fader 2",
+      "cc": 75,
+      "channel": 0,
+      "mode": "abs",
+      "target": {
+        "kind": "focused_param",
+        "param": 9
+      }
+    },
+    {
+      "id": "fader3",
+      "label": "Fader 3",
+      "cc": 79,
+      "channel": 0,
+      "mode": "abs",
+      "target": {
+        "kind": "focused_param",
+        "param": 10
+      }
+    },
+    {
+      "id": "fader4",
+      "label": "Fader 4",
+      "cc": 72,
+      "channel": 0,
+      "mode": "abs",
+      "target": {
+        "kind": "focused_param",
+        "param": 11
+      }
+    },
+    {
+      "id": "fader5",
+      "label": "Fader 5",
+      "cc": 80,
+      "channel": 0,
+      "mode": "abs",
+      "target": {
+        "kind": "focused_param",
+        "param": 12
+      }
+    },
+    {
+      "id": "fader6",
+      "label": "Fader 6",
+      "cc": 81,
+      "channel": 0,
+      "mode": "abs",
+      "target": {
+        "kind": "focused_param",
+        "param": 13
+      }
+    },
+    {
+      "id": "fader7",
+      "label": "Fader 7",
+      "cc": 82,
+      "channel": 0,
+      "mode": "abs",
+      "target": {
+        "kind": "focused_param",
+        "param": 14
+      }
+    },
+    {
+      "id": "fader8",
+      "label": "Fader 8",
+      "cc": 83,
+      "channel": 0,
+      "mode": "abs",
+      "target": {
+        "kind": "focused_param",
+        "param": 15
+      }
+    },
+    {
+      "id": "fader9",
+      "label": "Fader 9",
+      "cc": 85,
+      "channel": 0,
+      "mode": "abs",
+      "target": {
+        "kind": "selected_volume"
+      }
+    },
+    {
+      "id": "play",
+      "label": "Play",
+      "cc": null,
+      "channel": 0,
+      "mode": "button",
+      "target": {
+        "kind": "transport",
+        "action": "toggle_play"
+      }
+    },
+    {
+      "id": "stop",
+      "label": "Stop",
+      "cc": null,
+      "channel": 0,
+      "mode": "button",
+      "target": {
+        "kind": "transport",
+        "action": "stop"
+      }
+    },
+    {
+      "id": "record",
+      "label": "Record",
+      "cc": null,
+      "channel": 0,
+      "mode": "button",
+      "target": {
+        "kind": "transport",
+        "action": "record"
+      }
+    },
+    {
+      "id": "loop",
+      "label": "Loop",
+      "cc": null,
+      "channel": 0,
+      "mode": "button",
+      "target": {
+        "kind": "transport",
+        "action": "loop"
+      }
+    },
+    {
+      "id": "bank_down",
+      "label": "Bank <",
+      "cc": null,
+      "channel": 0,
+      "mode": "button",
+      "target": {
+        "kind": "bank",
+        "step": -1
+      }
+    },
+    {
+      "id": "bank_up",
+      "label": "Bank >",
+      "cc": null,
+      "channel": 0,
+      "mode": "button",
+      "target": {
+        "kind": "bank",
+        "step": 1
+      }
+    },
+    {
+      "id": "agent_a",
+      "label": "Agent A",
+      "cc": null,
+      "channel": 0,
+      "mode": "button",
+      "target": {
+        "kind": "agent",
+        "name": "agent_a"
+      }
+    },
+    {
+      "id": "agent_b",
+      "label": "Agent B",
+      "cc": null,
+      "channel": 0,
+      "mode": "button",
+      "target": {
+        "kind": "agent",
+        "name": "agent_b"
+      }
+    },
+    {
+      "id": "agentA",
+      "label": "Pad 5 - Talk to AUDIO",
+      "note": 40,
+      "channel": 9,
+      "mode": "button",
+      "target": {
+        "kind": "agent",
+        "name": "talk"
+      }
+    },
+    {
+      "id": "agentB",
+      "label": "Pad 6 - Safety (tap undo / hold stop)",
+      "note": 41,
+      "channel": 9,
+      "mode": "button",
+      "target": {
+        "kind": "agent",
+        "name": "safety",
+        "tap": "undo"
+      }
+    }
+  ],
+  "plugin_maps": {
+    "AlleyVerb": [
+      "Size",
+      "Decay",
+      "Pre-delay",
+      "Wet",
+      "Low Cut",
+      "High Cut",
+      "Width",
+      "Shimmer",
+      "Dry",
+      "Output",
+      "Attack",
+      "Early Diffusion",
+      "Late Diffusion",
+      "Mod Depth",
+      "Shimmer Feedback",
+      "Riser"
+    ],
+    "KickNull": [
+      "Sensitivity",
+      "Attack",
+      "Decay",
+      "Length",
+      "Kick Level",
+      "Kick Drive",
+      "Comp Threshold",
+      "Output",
+      "Lookahead",
+      "Click",
+      "Gate Threshold",
+      "Gate Release",
+      "Kick Threshold",
+      "Comp Ratio",
+      "Comp Attack",
+      "Comp Release"
+    ],
+    "WaveTag": [
+      "Rate",
+      "Depth",
+      "Shape",
+      "Bend",
+      "Smooth",
+      "Phase",
+      "Width",
+      "Output",
+      "Rate Hz"
+    ],
+    "ChopShop": [
+      "Phat Drive",
+      "Phat Mix",
+      "OTT Depth",
+      "OTT Time",
+      "Buzz Mix",
+      "Vowel",
+      "Width",
+      "Mix",
+      "Input",
+      "Buzz Drive",
+      "Vowel Res",
+      "Vowel Mix",
+      "Chaos Rate",
+      "Spread",
+      "Clip Drive",
+      "Output"
+    ],
+    "Pro-Q 4": [
+      "Band 1 Gain",
+      "Band 2 Gain",
+      "Band 3 Gain",
+      "Band 4 Gain",
+      "Band 5 Gain",
+      "Band 6 Gain",
+      "Band 7 Gain",
+      "Output Level",
+      "Band 1 Frequency",
+      "Band 2 Frequency",
+      "Band 3 Frequency",
+      "Band 4 Frequency",
+      "Band 5 Frequency",
+      "Band 6 Frequency",
+      "Band 7 Frequency",
+      "Gain Scale"
+    ],
+    "FabFilter Pro-Q 4": [
+      "Band 1 Gain",
+      "Band 2 Gain",
+      "Band 3 Gain",
+      "Band 4 Gain",
+      "Band 5 Gain",
+      "Band 6 Gain",
+      "Band 7 Gain",
+      "Output Level",
+      "Band 1 Frequency",
+      "Band 2 Frequency",
+      "Band 3 Frequency",
+      "Band 4 Frequency",
+      "Band 5 Frequency",
+      "Band 6 Frequency",
+      "Band 7 Frequency",
+      "Gain Scale"
+    ],
+    "Fruity parametric EQ 2": [
+      "Band 1 level",
+      "Band 2 level",
+      "Band 3 level",
+      "Band 4 level",
+      "Band 5 level",
+      "Band 6 level",
+      "Band 7 level",
+      "Main level",
+      "Band 1 freq",
+      "Band 2 freq",
+      "Band 3 freq",
+      "Band 4 freq",
+      "Band 5 freq",
+      "Band 6 freq",
+      "Band 7 freq",
+      ""
+    ],
+    "Fruity Parametric EQ 2": [
+      "Band 1 level",
+      "Band 2 level",
+      "Band 3 level",
+      "Band 4 level",
+      "Band 5 level",
+      "Band 6 level",
+      "Band 7 level",
+      "Main level",
+      "Band 1 freq",
+      "Band 2 freq",
+      "Band 3 freq",
+      "Band 4 freq",
+      "Band 5 freq",
+      "Band 6 freq",
+      "Band 7 freq",
+      ""
+    ],
+    "Serum 2": [
+      "Macro 1",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4",
+      "Macro 5",
+      "Macro 6",
+      "Macro 7",
+      "Macro 8",
+      "Filter 1 Freq",
+      "Filter 1 Res",
+      "Env 1 Attack",
+      "Env 1 Decay",
+      "Env 1 Sustain",
+      "Env 1 Release",
+      "A WT Pos",
+      "Main Vol"
+    ],
+    "Kontakt 8": "midi",
+    "Kontakt": "midi",
+    "Omnisphere": "midi",
+    "MIDI Out": [
+      "K1",
+      "K2",
+      "K3",
+      "K4",
+      "K5",
+      "K6",
+      "K7",
+      "K8",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8"
+    ],
+    "Fruity MIDI Out": [
+      "K1",
+      "K2",
+      "K3",
+      "K4",
+      "K5",
+      "K6",
+      "K7",
+      "K8",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8"
+    ],
+    "Keyscape": "midi"
+  }
+}
